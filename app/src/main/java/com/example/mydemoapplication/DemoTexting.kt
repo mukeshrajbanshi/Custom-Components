@@ -1,7 +1,10 @@
 package com.example.mydemoapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 
 
 class DemoTexting : AppCompatActivity() {
@@ -10,6 +13,7 @@ class DemoTexting : AppCompatActivity() {
         setContentView(R.layout.activity_demo_texting)
 
         val customInputField = findViewById<CustomInputField>(R.id.custom_input)
+        val bottomButton = findViewById<Button>(R.id.custom_button)
 
 //        customInputField.enablePasswordToggle(true)
         customInputField.setLabel("Enter Amount", true)
@@ -18,6 +22,12 @@ class DemoTexting : AppCompatActivity() {
         customInputField.setMaxLength(20)
         customInputField.setEnabledInput(true)
         customInputField.setInputType("number")
+
+        bottomButton.setOnClickListener{
+            Log.e("CardControlsActivity", "button clicked check in main!")
+            val  value = Intent(this, Accordion ::class.java)
+            startActivity(value)
+        }
 
 
 

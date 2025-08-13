@@ -34,5 +34,8 @@
             <enum name="large" value="2"/>
         </attr>
     </declare-styleable>
+    <declare-styleable name="AccordionView">
+        <attr name="accordionTitle" format="string" />
+    </declare-styleable>
 
 </resources>
