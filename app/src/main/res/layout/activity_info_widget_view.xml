@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoWidgetView">
+
+    <!-- BankCard -->
+
+    <!-- CardView containing both rows -->
+    <com.example.mydemoapplication.BankCard
+        android:id="@+id/mint_card_view"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/controls_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/mint_card_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- First row with 3 controls -->
+            <LinearLayout
+                android:id="@+id/controls_row_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.example.mydemoapplication.UserCardControls
+                    android:id="@+id/lock_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:buttonIcon="@drawable/lock"
+                    app:buttonTitle="Lock" />
+
+                <com.example.mydemoapplication.UserCardControls
+                    android:id="@+id/wallet_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:buttonIcon="@drawable/wallet"
+                    app:buttonTitle="Wallet" />
+
+                <com.example.mydemoapplication.UserCardControls
+                    android:id="@+id/wallet_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:buttonIcon="@drawable/wallet"
+                    app:buttonTitle="Link" />
+            </LinearLayout>
+
+            <!-- Second row with 2 controls -->
+            <LinearLayout
+                android:id="@+id/controls_row_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.example.mydemoapplication.UserCardControls
+                    android:id="@+id/credit_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:buttonIcon="@drawable/wallet"
+                    app:buttonTitle="Credit" />
+
+                <com.example.mydemoapplication.UserCardControls
+                    android:id="@+id/show_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:buttonIcon="@drawable/wallet"
+                    app:buttonTitle="Show" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_margin="16dp"
+        android:text="Next"
+        app:backgroundTint="#0169B2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

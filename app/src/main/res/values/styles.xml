@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSwitchTheme">
+        <item name="colorControlActivated">#2196F3</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#CCCCCC</item>
+        <item name="thumbTint">@drawable/switch_thumb_selector</item>
+        <item name="trackTint">@drawable/switch_track_selector</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#1976D2</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+</resources>

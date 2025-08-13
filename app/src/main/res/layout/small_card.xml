@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/small_card"
+   >
+
+    <!-- Card Number -->
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000 00xx xxxx 1236"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="top|start"/>
+
+    <!-- Card Holder Name -->
+    <TextView
+        android:id="@+id/tvCardHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="2dp"
+        android:text="Nariah Sultana"
+        android:textColor="#FFFFFF"
+        android:textSize="6sp" />
+</FrameLayout>
+
+

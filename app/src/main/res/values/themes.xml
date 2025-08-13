@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyDemoApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Set primary brand color to the new header color -->
+        <item name="colorPrimary">#0169B2</item>
+        <item name="colorPrimaryVariant">#01508F</item> <!-- Optional darker version -->
+        <item name="colorOnPrimary">@color/white</item> <!-- Text color on header -->
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Toolbar background (optional override) -->
+        <item name="toolbarStyle">@style/CustomToolbar</item>
+    </style>
+
+    <!-- Optional custom toolbar style -->
+    <style name="CustomToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">#0169B2</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme.MyDemoApplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyDemoApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyDemoApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

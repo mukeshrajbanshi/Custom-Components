@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardControlsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cards_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Vertical layout inside the CardView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Controls"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#002D62"
+                android:paddingTop="12dp"
+                android:layout_marginHorizontal="16dp"
+                android:paddingBottom="32dp" />
+
+            <!-- Custom Cards -->
+            <com.example.mydemoapplication.CustomCard
+                android:id="@+id/custom_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <com.example.mydemoapplication.CustomCard
+                android:id="@+id/custom_card_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <com.example.mydemoapplication.CustomCard
+                android:id="@+id/custom_card_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <com.example.mydemoapplication.CustomCard
+                android:id="@+id/custom_card_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--        <com.example.mydemoapplication.CustomCard-->
+<!--        android:id="@+id/card_usage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:cardElevation="4dp"-->
+<!--        app:cardCornerRadius="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <com.example.mydemoapplication.CustomCard-->
+<!--        android:id="@+id/card_usageTwo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/card_usage"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:cardElevation="4dp"-->
+<!--        app:cardCornerRadius="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_buttons_One"
+        android:layout_width="346dp"
+        android:layout_height="63dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:backgroundTint="#0169B2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

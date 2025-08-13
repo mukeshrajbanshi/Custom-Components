@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="16dp"
+    android:padding="16dp"
+    android:background="@drawable/visa_card"
+    android:clipToPadding="false">
+
+
+    <TextView
+        android:id="@+id/card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234 xxxx xxxx 1236"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="85dp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+         />
+
+    <TextView
+        android:id="@+id/cardholder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mukesh Rajbanshi"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/card_number"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/card_expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expires on: 10/29"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@id/cardholder_name"
+        android:layout_marginTop="4dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/visa_logo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="VISA"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="22sp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginEnd="16dp" />-->
+</RelativeLayout>
